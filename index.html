@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Flexbox</title>
     <style>
-    *{
+    body{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -14,103 +15,180 @@
         font-size: 16px;
 
     }
+
     .menu-container{
         color: #fff;
-        background-color: #5995DA;
+        background-color: rgb(10, 47, 89);
         padding: 20px 0;
         display: flex;
         justify-content: center;
+
     }
     .menu{
-        border: 1px solid #fff;
         width: 900px;
         display: flex;
         justify-content: space-between;
+
         
     }
     .links{
         display: flex;
         justify-content: flex-end;
-
+        font-weight: 200;
+        font-size: 1.1rem;
     }
     .login{margin-left: 2rem;}
     .hero-container{
-        padding: 8rem;
-        text-align: center;
+        padding: 6rem;
+        color:white;
+        font-size: 2rem;
+        text-align: left;
+        background: url('https://i.postimg.cc/8z9n0SK7/bike-hero.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+    .hero-container p {font-weight: 200;}
+    .hero-container button {
+        background:rgb(114, 175, 57);
+        border:none;
+        color: white;
+        padding: 1rem 4rem;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        transition: .2s ease;
+    }
+    .hero-container button:hover{background:rgb(84, 130, 40);}
     .fact-container{
-        padding: 2rem;
-        background: lightgray;
+        padding: 3rem;
+        background:#fffefe;
+        color: black;
+    }
+    .fact-container h1{
+        margin-left: 4rem;
+        font-size: 4.5rem;
+        margin:1rem;
+        color: black;
+    }
+    .fact-container h2{
+        margin:0;
+        font-size: 2rem;
+    }
+    .fact-container img{
+        width:50%;
+    }
+    .fact-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        color: white;
     }
     .card{
         text-align: center;
-        background:#b3b3b3;
+        border-radius: 8px;
         margin: 1rem;
-        padding: 1rem;
+        padding: 2rem;
     }
     .card > img{
         max-width: 100%;
+
     }
     .buzz-container{
         padding: 8rem;
         text-align: center;
         background: rgb(34, 118, 215);
         color: white;
+        background: url('https://i.postimg.cc/0ydTnnFF/imageedit-1-8280635664.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;      
     }
+    .buzz-container h1{font-size: 3rem; margin: 0;}
+    .buzz-container p{font-size: 1.5rem;}
+    .buzz-container button{
+        background:rgb(114, 175, 57);
+        border:none;
+        color: white;
+        padding: 1rem 4rem;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        transition: .2s ease;
+    }
+    .buzz-container button:hover{background:rgb(84, 130, 40);}
+    
     #about{
         padding: 4rem;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
     }
-  
+    .brands{
+        background-color: rgb(13, 62, 118);
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 5rem;
+    }
+    .brands img{
+        width: 120%;
+    }
     </style>
 </head>
 <body>
-    <div class="menu-container">
-        <div class="menu">
-            <div class="logo">Logo</div>
-            <div class="links">
-                <div class="signup">Sign Up</div>
-                <div class="login">Login</div>
+    <nav>
+        <div class="menu-container">
+            <div class="menu">
+                <div class="logo"> <b> BIKELOCITY </b></div>
+                <div class="links">
+                    <div class="signup">Sign Up</div>
+                    <div class="login">Login</div>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- HERO -->
     <section id="hero">
         <header class="hero-container">
-            <h1>Heading text</h1>
-            <p>This is my subheading topic text</p>
+            <h1 style="margin-bottom: -1rem;">On-Demand Bikes</h1>
+            <p>Ride your bike with no hassle </p>
+            <button href="">Book Repair Now</button>
         </header>
+        <footer>
+            <div class="brands">
+                <div id="nike"><img src="Nike.png" alt=""></div>
+                <div id="adiddas"><img src="Adidas.png" alt=""></div>
+                <div id="reebok"><img src="reebok.png" alt=""></div>
+                <div id="puma"><img src="puma.png" alt=""></div>
+            </div>
+        </footer>
     </section>
     <!-- THREE FUN FACTS -->
     <section id="facts">
         <div class="fact-container">
-            <div class="card">
-                <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-                <h1>Fact#1</h1>
-                <p>jflksaf falkfj klafjl fslfjkls f jfals faf</p>
-            </div>
-            <div class="card">
-                <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-                <h1>Fact#1</h1>
-                <p>jflksaf falkfj klafjl fslfjkls f jfals faf</p>
-            </div>
-            <div class="card">
-                <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-                <h1>Fact#1</h1>
-                <p>jflksaf falkfj klafjl fslfjkls f jfals faf</p>
+            <h1>How it Works</h1>
+            <div class="fact-grid">
+                
+                <div class="card">
+                    <img src="Step1.png" alt="">
+                    <h2>Book Online</h2>
+                    <p>Takes 1 min to request a service online</p>
+                </div>
+                <div class="card">
+                    <img src="Step2.png" alt="">
+                    <h2>We Come to You</h2>
+                    <p>Specialized technician at your door</p>
+                </div>
+                <div class="card">
+                    <img src="Step3.png" alt="">
+                    <h2>Ride Your Bike</h2>
+                    <p>Do what you enjoy most</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- BUZZWORD SECTION -->
     <section id="buzzword">
         <div class="buzz-container">
-            <h1>heading text</h1>
-            <p>my paragraph text</p>
+            <h1><b>BIKELOCITY</b><b style="margin-left:1rem;">SHOP</></h1>
+            <p>Shop from our wide selection of bikes and equipment</p>
+            <button>Shop Now</button>
         </div>
     </section>
     
