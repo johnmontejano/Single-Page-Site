@@ -159,7 +159,6 @@
     ::placeholder{
         color: white;
         font-size: 1.2rem;
-
     }
     #contact textarea{
         margin-top:1rem;
@@ -167,7 +166,16 @@
     }
     #contact button{
         border: none;
+    }.footer-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-weight: 400;
+        padding: 3rem;
+        background:black;
+        color: white;
     }
+    .footer-grid h2{font-weight: 500;}
+    .footer-grid ul{list-style-type: none;}
     </style>
 </head>
 <body>
@@ -256,8 +264,29 @@
     </section>
     
     <!-- FOOTER -->
-    <footer>
-
+    <footer class="footer-grid">
+        <div><h1>BIKELOCITY</h1></div>
+        <div>
+        <ul>
+            <h2>Service</h2>
+            <li>Contact us</li>
+            <li>About us</li>
+        </ul>
+        </div>
+        <div>
+            <ul>
+                <h2>Popular Bikes</h2>
+                <li>Cannondale repairs</li>
+                <li>Trek repairs</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h2>Careers</h2>
+                <li>Email us</li>
+                <li>Apply now</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
